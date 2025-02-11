@@ -1,15 +1,16 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import Header from "../components/header"
-import Footer from "../components/footer"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { Toaster } from "@/components/ui/toaster"
+import type React from "react" // Import React
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Lumina Lactis - Premium Donkey Milk Products",
-  description:
-    "Discover the health benefits of high-quality donkey milk products. Ethically sourced and scientifically validated.",
+  title: "Pure Donkey Milk Products | Natural Wellness",
+  description: "Premium donkey milk products for your health and wellness",
 }
 
 export default function RootLayout({
@@ -18,11 +19,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} flex flex-col min-h-screen bg-white text-gray-800`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={inter.className}>
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="min-h-screen">{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   )
