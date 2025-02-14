@@ -6,6 +6,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ProductCard } from "@/components/product-card"
 import { SubscriptionPlans } from "@/components/subscription-plans"
 import { SustainabilityMetrics } from "@/components/sustainability-metrics"
+import { HealthChallenges } from "@/components/health-challenges"
+import { FAQSection } from "@/components/faq-section"
+import { NewsArticles } from "@/components/news-articles"
+import { TestimonialSection } from "@/components/testimonial-section"
+import { KeyFacts } from "@/components/key-facts"
+import { ProductShowcase } from "@/components/product-showcase"
+import { MilkFacts } from "@/components/milk-facts"
 
 export default function Home() {
   return (
@@ -125,6 +132,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Add Product Showcase section */}
+      <ProductShowcase />
+
+      {/* Health Challenges Section */}
+      <HealthChallenges />
+      {/* Add Key Facts section after Health Challenges */}
+      <KeyFacts />
+
       {/* Subscription Plans */}
       <section className="container">
         <div className="flex flex-col gap-8">
@@ -146,6 +161,14 @@ export default function Home() {
           <SustainabilityMetrics />
         </div>
       </section>
+
+      {/* Add News Articles and Testimonial sections before FAQ */}
+      <NewsArticles />
+      <TestimonialSection />
+
+      {/* Add the FAQ section and Milk Facts */}
+      <FAQSection />
+      <MilkFacts />
     </div>
   )
 }
