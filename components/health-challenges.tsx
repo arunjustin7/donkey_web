@@ -49,7 +49,7 @@ export function HealthChallenges() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold tracking-tight mb-4">Modern Health Challenges</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Modern Health Challenges of human</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Discover how donkey milk provides natural solutions to common health concerns that many people face today.
           </p>
