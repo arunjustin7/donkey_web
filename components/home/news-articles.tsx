@@ -22,11 +22,11 @@ const newsArticles = [
   },
 ]
 
-export function NewsArticles() {
+function NewsArticles() {
   return (
     <section className="py-20 bg-background">
       <div className="container max-w-[1280px] mx-auto px-4">
-        <h2 className="text-center mb-12 text-[32px] font-semibold text-[rgb(17,24,39)] font-system">News Articles</h2>
+        <h2 className="text-center mb-12 text-[32px] font-semibold text-[rgb(17,24,39)]">News Articles</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {newsArticles.map((article, index) => (
             <Card
@@ -47,3 +47,4 @@ export function NewsArticles() {
   )
 }
 
+export default NewsArticles

@@ -12,11 +12,11 @@ const testimonials = [
   },
 ]
 
-export function TestimonialSection() {
+function Testimonials() {
   return (
     <section className="py-16 bg-background">
       <div className="container max-w-[1280px] mx-auto px-4">
-        <h2 className="text-center mb-12 text-[32px] font-semibold text-[rgb(17,24,39)] font-system">Testimonial</h2>
+        <h2 className="text-center mb-12 text-[32px] font-semibold text-[rgb(17,24,39)]">Testimonial</h2>
         <Carousel className="relative max-w-[800px] mx-auto">
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
@@ -50,3 +50,4 @@ export function TestimonialSection() {
   )
 }
 
+export default Testimonials

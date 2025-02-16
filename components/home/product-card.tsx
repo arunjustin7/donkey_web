@@ -1,8 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ShoppingCart } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { ShoppingCart } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 interface ProductCardProps {
   name: string

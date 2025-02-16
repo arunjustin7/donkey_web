@@ -1,34 +1,27 @@
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { Toaster } from "@/components/ui/toaster"
-import type React from "react" // Import React
-import { Playfair_Display } from "next/font/google"
+import type { Metadata } from "next";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] })
-const playfair = Playfair_Display({ subsets: ["latin"] })
+import { Toaster } from "@/components/ui/toaster";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Pure Donkey Milk Products | Natural Wellness",
   description: "Premium donkey milk products for your health and wellness",
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+function RootLayout({ children }: readOnlyChild) {
   return (
-    <html lang="en" className={`scroll-smooth ${playfair.variable}`}>
-      <body className={inter.className}>
+    <html lang="en">
+      <body>
         <Header />
-        <main className="min-h-screen">{children}</main>
+        {children}
         <Footer />
+
         <Toaster />
       </body>
     </html>
   )
 }
 
+export default RootLayout

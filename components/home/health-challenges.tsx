@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
@@ -38,7 +39,7 @@ const dairySensitivities = [
   { type: "Digestive Issues", percentage: 45 },
 ]
 
-export function HealthChallenges() {
+function HealthChallenges() {
   return (
     <section className="py-16 bg-background">
       <div className="container">
@@ -215,3 +216,4 @@ export function HealthChallenges() {
   )
 }
 
+export default HealthChallenges 

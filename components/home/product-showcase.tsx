@@ -56,7 +56,7 @@ const features = [
   },
 ]
 
-export function ProductShowcase() {
+function ProductShowcase() {
   const containerRef = useRef<HTMLDivElement>(null)
   const prefersReducedMotion = useReducedMotion()
   const { scrollYProgress } = useScroll({
@@ -97,6 +97,7 @@ export function ProductShowcase() {
         backgroundImage:
           "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAAD8/vz08vT09PT09PT09PSKb78gAAAABXRSTlMAAQICAwNk6/jqAAAAMElEQVQ4y2NgGAWjYBSMAhQ4AMQ/gPgvEP8H4v9A/B+I/wHxXyD+B8T/gfgHEAMAszwMYP6DAT8AAAAASUVORK5CYII=')",
         backgroundSize: "100px 100px",
+        // @ts-ignore
         backgroundOpacity: "0.02",
       }}
     >
@@ -214,3 +215,4 @@ export function ProductShowcase() {
   )
 }
 
+export default ProductShowcase

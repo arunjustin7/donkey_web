@@ -28,7 +28,7 @@ const facts = [
   },
 ]
 
-export function MilkFacts() {
+function MilkFacts() {
   const containerRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -114,3 +114,4 @@ export function MilkFacts() {
   )
 }
 
+export default MilkFacts
