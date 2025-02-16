@@ -31,7 +31,7 @@ function NewsArticles() {
           {newsArticles.map((article, index) => (
             <Card
               key={index}
-              className="w-full lg:w-[380px] h-[420px] bg-[rgb(243,244,246)] rounded-xl shadow-[0_4px_6px_rgba(0,0,0,0.05)] p-6 transition-transform hover:scale-[1.02] mx-auto"
+              className="w-full lg:w-[380px] h-[420px] bg-lime-100/30 rounded-xl shadow-[0_4px_6px_rgba(0,0,0,0.05)] p-6 transition-transform hover:scale-[1.02] mx-auto"
             >
               <CardContent className="h-full flex flex-col justify-between p-0">
                 <p className="text-[14px] leading-[1.6] text-[rgb(55,65,81)]">{article.content}</p>

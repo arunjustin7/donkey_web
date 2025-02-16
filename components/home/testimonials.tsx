@@ -10,6 +10,18 @@ const testimonials = [
     author: "Bushra",
     avatar: "/placeholder.svg",
   },
+  {
+    content:
+      "I have been consuming Native A2 milk since 3 months and I am happy customer of Native milk. Delivery service is also good. I feel light after having this milk as compared to regular milk. Consulted my doctor also before consuming it so thumbs up to this product.",
+    author: "Bushra",
+    avatar: "/placeholder.svg",
+  },
+  {
+    content:
+      "I have been consuming Native A2 milk since 3 months and I am happy customer of Native milk. Delivery service is also good. I feel light after having this milk as compared to regular milk. Consulted my doctor also before consuming it so thumbs up to this product.",
+    author: "Bushra",
+    avatar: "/placeholder.svg",
+  },
 ]
 
 function Testimonials() {
@@ -20,8 +32,8 @@ function Testimonials() {
         <Carousel className="relative max-w-[800px] mx-auto">
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index}>
-                <div className="flex flex-col items-center text-center px-4 md:px-8">
+              <CarouselItem key={index} className=" ">
+                <div className="flex flex-col items-center text-center p-4 md:p-8 rounded-2xl bg-orange-100">
                   <p className="text-[14px] leading-[1.6] text-[rgb(55,65,81)] max-w-[600px] mb-8">
                     {testimonial.content}
                   </p>
@@ -38,9 +50,11 @@ function Testimonials() {
               </CarouselItem>
             ))}
           </CarouselContent>
+
           <CarouselPrevious className="absolute -left-12 w-10 h-10 rounded-full bg-black text-white hover:bg-black/90">
             <Minus className="h-4 w-4" />
           </CarouselPrevious>
+
           <CarouselNext className="absolute -right-12 w-10 h-10 rounded-full bg-black text-white hover:bg-black/90">
             <Minus className="h-4 w-4" />
           </CarouselNext>

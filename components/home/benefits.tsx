@@ -45,7 +45,7 @@ function Benefits() {
   })
 
   return (
-    <section ref={containerRef} className="py-24 bg-white">
+    <section ref={containerRef} className="pt-24  bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -82,36 +82,7 @@ function Benefits() {
             </motion.div>
           ))}
         </div>
-
-        {/* Animated comparison chart */}
-        <motion.div
-          className="mt-24 bg-gray-50 rounded-xl p-8"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
-          <h3 className="text-2xl font-bold mb-8 text-center">Nutritional Comparison</h3>
-          <div className="space-y-6">
-            {["Protein", "Calcium", "Vitamin D", "Omega-3"].map((nutrient, index) => (
-              <div key={nutrient} className="space-y-2">
-                <div className="flex justify-between text-sm font-medium">
-                  <span>{nutrient}</span>
-                  <span>100%</span>
-                </div>
-                <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <motion.div
-                    className="h-full bg-[#86C232] origin-left"
-                    initial={{ scaleX: 0 }}
-                    whileInView={{ scaleX: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.2, duration: 1 }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-      </div>
+    </div>
     </section>
   )
 }

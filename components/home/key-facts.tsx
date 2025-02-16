@@ -6,33 +6,6 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 
-const facts = [
-  {
-    title: "In-House Production",
-    text: "Our farm and processing facility are integrated, optimizing quality control and ensuring the freshest product delivery.",
-    icon: Factory,
-    position: "top-left",
-  },
-  {
-    title: "Eco-Friendly Brand",
-    text: "Located in one of the most pristine regions, our farm maintains the highest environmental standards.",
-    icon: Leaf,
-    position: "top-right",
-  },
-  {
-    title: "Quality Guarantee",
-    text: "Regular testing in our accredited laboratory ensures consistent quality and safety standards.",
-    icon: Shield,
-    position: "bottom-left",
-  },
-  {
-    title: "Made with Care",
-    text: "We are passionate about our craft, constantly improving to deliver the finest donkey milk products.",
-    icon: Heart,
-    position: "bottom-right",
-  },
-]
-
 const facts1 = [
   {
     title: "In-House Production",
@@ -62,17 +35,6 @@ const facts2 = [
     position: "bottom-right",
   },
 ]
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-}
-
 const cardVariants = {
   hidden: (position: string) => ({
     opacity: 0,
@@ -104,6 +66,7 @@ function KeyFacts() {
           >
             Key Facts About Our Donkey Milk
           </motion.h2>
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -123,11 +86,11 @@ function KeyFacts() {
                 key={fact.title}
                 custom={fact.position}
                 variants={cardVariants}
-                className={`mb-4 bg-white rounded-xl p-6 shadow-[0_4px_6px_rgba(0,0,0,0.05)] hover:shadow-lg transition-shadow duration-300`}
+                className={`mb-20 bg-white rounded-xl p-6 shadow-[0_4px_6px_rgba(0,0,0,0.05)] hover:shadow-lg transition-shadow duration-300`}
               >
                 <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-[#4A90E2]/10 p-2">
-                    <fact.icon className="w-6 h-6 text-[#4A90E2]" />
+                  <div className="rounded-full bg-[#86C232]/10 p-2">
+                    <fact.icon className="w-6 h-6 text-[#86C232]" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#5D4037] mb-2">{fact.title}</h3>
@@ -158,11 +121,11 @@ function KeyFacts() {
                 key={fact.title}
                 custom={fact.position}
                 variants={cardVariants}
-                className={`mb-4 bg-white rounded-xl p-6 shadow-[0_4px_6px_rgba(0,0,0,0.05)] hover:shadow-lg transition-shadow duration-300`}
+                className={`mb-20 bg-white rounded-xl p-6 shadow-[0_4px_6px_rgba(0,0,0,0.05)] hover:shadow-lg transition-shadow duration-300`}
               >
                 <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-[#4A90E2]/10 p-2">
-                    <fact.icon className="w-6 h-6 text-[#4A90E2]" />
+                  <div className="rounded-full bg-[#86C232]/10 p-2">
+                    <fact.icon className="w-6 h-6 text-[#86C232]" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#5D4037] mb-2">{fact.title}</h3>

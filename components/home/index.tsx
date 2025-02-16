@@ -7,7 +7,6 @@ import FAQSection from "./faq-section";
 import KeyFacts from "./key-facts";
 import Benefits from "./benefits";
 import Feature from "./feature";
-import Impacts from "./impacts";
 import Hero from "./hero";
 
 function Page() {
@@ -16,13 +15,12 @@ function Page() {
       <Hero />
       <Feature />
       <Benefits />
+      <SustainabilityMetrics />
       <HealthChallenges />
       <KeyFacts />
-      <Impacts />
       <NewsArticles />
       <Testimonials />
       <FAQSection />
-      <SustainabilityMetrics />
     </>
   )
 }

@@ -11,17 +11,17 @@ const skinConditions = [
   {
     title: "Eczema",
     description: "Dry, itchy, and inflamed skin causing discomfort",
-    image: "/placeholder.svg",
+    image: "/key.mp4",
   },
   {
     title: "Psoriasis",
     description: "Scaly patches causing irritation and inflammation",
-    image: "/placeholder.svg",
+    image: "/key.mp4",
   },
   {
     title: "Premature Aging",
     description: "Early signs of aging and loss of skin elasticity",
-    image: "/placeholder.svg",
+    image: "/key.mp4",
   },
 ]
 
@@ -67,31 +67,19 @@ function HealthChallenges() {
           <TabsContent value="skin" className="space-y-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="relative h-96 rounded-xl overflow-hidden">
+                <div className="relative rounded-xl">
                   <Carousel className="w-full">
                     <CarouselContent>
                       {skinConditions.map((condition, index) => (
                         <CarouselItem key={index}>
-                          <Card>
-                            <CardContent className="p-0 aspect-[4/3]">
-                              <Image
-                                src={condition.image || "/placeholder.svg"}
-                                alt={condition.title}
-                                width={600}
-                                height={400}
-                                className="object-cover w-full h-full"
-                              />
-                              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent p-6 flex flex-col justify-end">
-                                <h3 className="text-xl font-semibold text-white mb-2">{condition.title}</h3>
-                                <p className="text-white/90">{condition.description}</p>
-                              </div>
-                            </CardContent>
-                          </Card>
+                          <video autoPlay controls={false} loop muted playsInline>
+                            <source src={condition.image} type="video/mp4" />
+                          </video>
                         </CarouselItem>
                       ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
+                    <CarouselPrevious className="left-0" />
+                    <CarouselNext className="right-0" />
                   </Carousel>
                 </div>
               </div>
