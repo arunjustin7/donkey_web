@@ -55,7 +55,7 @@ const cardVariants = {
 
 function KeyFacts() {
   return (
-    <section className="py-24 bg-[#F8F9FA] overflow-hidden">
+    <section className="py-10x bg-[#F8F9FA] overflow-hidden">
       <div className="container max-w-[1200px] mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2

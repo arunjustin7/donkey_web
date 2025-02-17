@@ -108,7 +108,7 @@ const faqData = {
 
 function FAQSection() {
   return (
-    <section className="w-full py-16 bg-background">
+    <section className="w-full py-16 faq">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tight text-center mb-12">FAQs</h2>
         <div className="max-w-3xl mx-auto">

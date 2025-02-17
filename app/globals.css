@@ -88,3 +88,7 @@ body {
 .text-shadow {
   text-shadow: 2px 2px black;
 }
+
+.faq {
+  background: url("/don.png") center/cover no-repeat;
+}

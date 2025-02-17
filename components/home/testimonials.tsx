@@ -8,32 +8,32 @@ const testimonials = [
     content:
       "I have been consuming Native A2 milk since 3 months and I am happy customer of Native milk. Delivery service is also good. I feel light after having this milk as compared to regular milk. Consulted my doctor also before consuming it so thumbs up to this product.",
     author: "Bushra",
-    avatar: "/placeholder.svg",
+    avatar: "/don.png",
   },
   {
     content:
       "I have been consuming Native A2 milk since 3 months and I am happy customer of Native milk. Delivery service is also good. I feel light after having this milk as compared to regular milk. Consulted my doctor also before consuming it so thumbs up to this product.",
     author: "Bushra",
-    avatar: "/placeholder.svg",
+    avatar: "/don.png",
   },
   {
     content:
       "I have been consuming Native A2 milk since 3 months and I am happy customer of Native milk. Delivery service is also good. I feel light after having this milk as compared to regular milk. Consulted my doctor also before consuming it so thumbs up to this product.",
     author: "Bushra",
-    avatar: "/placeholder.svg",
+    avatar: "/don.png",
   },
 ]
 
 function Testimonials() {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16 bg-[#eef8e5]">
       <div className="container max-w-[1280px] mx-auto px-4">
         <h2 className="text-center mb-12 text-[32px] font-semibold text-[rgb(17,24,39)]">Testimonial</h2>
         <Carousel className="relative max-w-[800px] mx-auto">
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className=" ">
-                <div className="flex flex-col items-center text-center p-4 md:p-8 rounded-2xl bg-orange-100">
+                <div className="flex flex-col items-center text-center p-4 md:p-8 rounded-2xl bg-white">
                   <p className="text-[14px] leading-[1.6] text-[rgb(55,65,81)] max-w-[600px] mb-8">
                     {testimonial.content}
                   </p>
