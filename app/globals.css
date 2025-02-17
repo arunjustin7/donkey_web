@@ -90,5 +90,15 @@ body {
 }
 
 .faq {
-  background: url("/don.png") center/cover no-repeat;
+  background: url("/don5.png") center/cover no-repeat;
+}
+
+.center-clay {
+  backdrop-filter: blur(12px);
+  background-color: #fff;
+  border-radius: 26px;
+  box-shadow:
+    0px 35px 68px 0px rgba(184, 233, 134, 0.5),
+    inset 0px -8px 16px 0px rgba(184, 233, 134, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
 }

@@ -24,17 +24,17 @@ const newsArticles = [
 
 function NewsArticles() {
   return (
-    <section className="py-20 bg-lime-50">
+    <section className="py-20 bg-lime-">
       <div className="container max-w-[1280px] mx-auto px-4">
         <h2 className="text-center mb-12 text-[32px] font-semibold text-[rgb(17,24,39)]">News Articles</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {newsArticles.map((article, index) => (
             <Card
               key={index}
-              className="w-full lg:w-[380px] h-[420px] bg-[#faf4f1] rounded-xl shadow-[0_4px_6px_rgba(0,0,0,0.05)] p-6 transition-transform hover:scale-[1.02] mx-auto"
+              className="center-clay w-full lg:w-[380px] h-[420px] bg-[#faf4f1] rounded-xl  p-6 mx-auto"
             >
               <CardContent className="h-full flex flex-col justify-between p-0">
-                <p className="text-[14px] leading-[1.6]">{article.content}</p>
+                <p className="text-[14px] leading-[1.8]">{article.content}</p>
                 <div className="h-[40px] relative mt-4">
                   <Image src={article.logo || "/placeholder.svg"} alt={article.alt} fill className="object-contain" />
                 </div>
