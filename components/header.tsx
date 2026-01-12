@@ -45,8 +45,8 @@ export function Header() {
             </SheetContent>
           </Sheet>
           <Link href="/" className="flex items-center space-x-2">
-          <img className=" size-[52px]" src="/l.png" alt="logo" />
-          
+            <img className=" size-[100px]" src="/log.png" alt="logo" />
+
             <span className="text-xl font-bold">Donkey Delight's</span>
           </Link>
           <NavigationMenu className="hidden md:flex">

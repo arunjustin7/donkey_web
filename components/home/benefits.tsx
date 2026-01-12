@@ -18,7 +18,7 @@ const benefits = [
   {
     icon: Sparkles,
     title: "Anti-Aging",
-    description: "Natural compounds that help maintain youthful skin",
+    description: "Natural compounds that help maintain youthful skin and moisturizes",
   },
   {
     icon: Baby,

@@ -79,14 +79,14 @@ function KeyFacts() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
           <div>
             {facts1.map((fact, index) => (
               <motion.div
                 key={fact.title}
                 custom={fact.position}
                 variants={cardVariants}
-                className={`mb-20 bg-white rounded-xl p-6 shadow-[0_4px_6px_rgba(0,0,0,0.05)] hover:shadow-lg transition-shadow duration-300`}
+                className={`mb-6 md:mb-20 bg-white rounded-xl p-6 shadow-[0_4px_6px_rgba(0,0,0,0.05)] hover:shadow-lg transition-shadow duration-300`}
               >
                 <div className="flex items-start gap-4">
                   <div className="rounded-full bg-[#86C232]/10 p-2">
@@ -101,13 +101,13 @@ function KeyFacts() {
             ))}
           </div>
 
-          <div>
+          <div className="mb-6 md:mb-0">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/download__11_-removebg-4F28IbC1GXLL3Dsf1bic8SAjWIvRgP.png"
+              src="/last.png"
               alt="Donkey milk bottle with cute donkeys"
               width={600}
               height={600}
-              className="w-full max-w-[400px] mx-auto"
+              className="w-full max-w-[160px] mx-auto"
               priority
             />
             <Button size="lg" className="block mx-auto bg-[#86C232] hover:brightness-110 transition-all">
@@ -121,7 +121,7 @@ function KeyFacts() {
                 key={fact.title}
                 custom={fact.position}
                 variants={cardVariants}
-                className={`mb-20 bg-white rounded-xl p-6 shadow-[0_4px_6px_rgba(0,0,0,0.05)] hover:shadow-lg transition-shadow duration-300`}
+                className={`mb-6 md:mb-20 bg-white rounded-xl p-6 shadow-[0_4px_6px_rgba(0,0,0,0.05)] hover:shadow-lg transition-shadow duration-300`}
               >
                 <div className="flex items-start gap-4">
                   <div className="rounded-full bg-[#86C232]/10 p-2">

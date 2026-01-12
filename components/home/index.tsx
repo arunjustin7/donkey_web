@@ -18,8 +18,8 @@ function Page() {
       <SustainabilityMetrics />
       <HealthChallenges />
       <KeyFacts />
-      <NewsArticles />
       <Testimonials />
+      {/* <NewsArticles /> */}
       <FAQSection />
     </>
   )

@@ -11,17 +11,17 @@ const skinConditions = [
   {
     title: "Eczema",
     description: "Dry, itchy, and inflamed skin causing discomfort",
-    image: "/key.mp4",
+    image: "/sup-vmake.mp4",
   },
   {
     title: "Psoriasis",
     description: "Scaly patches causing irritation and inflammation",
-    image: "/key.mp4",
+    image: "/videoart-vmake.mp4",
   },
   {
     title: "Premature Aging",
     description: "Early signs of aging and loss of skin elasticity",
-    image: "/key.mp4",
+    image: "/milk.mp4",
   },
 ]
 

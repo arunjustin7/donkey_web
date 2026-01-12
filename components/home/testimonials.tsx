@@ -26,7 +26,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="py-16 bg-[#eef8e5]">
+    <section className="pt-20 pb-28 bg-[#eef8e5]">
       <div className="container max-w-[1280px] mx-auto px-4">
         <h2 className="text-center mb-12 text-[32px] font-semibold text-[rgb(17,24,39)]">Testimonial</h2>
         <Carousel className="relative max-w-[800px] mx-auto">
@@ -51,11 +51,11 @@ function Testimonials() {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="absolute -left-12 w-10 h-10 rounded-full bg-black text-white hover:bg-black/90">
+          <CarouselPrevious className="absolute  left-2 md:-left-16 w-10 h-10 rounded-full bg-black text-white hover:bg-black/90">
             <Minus className="h-4 w-4" />
           </CarouselPrevious>
 
-          <CarouselNext className="absolute -right-12 w-10 h-10 rounded-full bg-black text-white hover:bg-black/90">
+          <CarouselNext className="absolute right-2 md:-right-16 w-10 h-10 rounded-full bg-black text-white hover:bg-black/90">
             <Minus className="h-4 w-4" />
           </CarouselNext>
         </Carousel>
