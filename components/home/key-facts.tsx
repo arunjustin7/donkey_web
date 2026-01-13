@@ -35,7 +35,7 @@ const facts2 = [
     position: "bottom-right",
   },
 ]
-const cardVariants = {
+const cardVariants: any = {
   hidden: (position: string) => ({
     opacity: 0,
     x: position.includes("left") ? -50 : 50,
